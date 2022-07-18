@@ -1,0 +1,53 @@
+html{ 
+margin: 0; 
+} 
+.baner{
+	background-color:#1C59A7;
+	color:white;
+	text-align:center;
+	height:80px;
+}
+.rp{
+	background-color:#86ACDD;
+	text-align:center;
+	width:34%;
+	height:200px;
+	float:left;
+}
+
+.lp{
+	background-color:#3A70B5;
+	width:33%;
+	height:200px;
+	float:left;
+}
+.mp{
+	background-color:#5A8AC8;
+	width:33%;
+	height:200px;
+	float:left;
+}
+.bp{
+	background-color:#86ACDD;
+	text-align:center;
+	height:300px;
+}
+footer{
+	background-color:#1C59A7;
+	color:white;
+	margin: 0;
+	padding: 0;
+	position:relative;
+	bottom:20px;
+}
+.rpred{
+	background-color:yellow;
+	color:blue;
+	padding:10px;
+	text-align:center;
+	top:15px;
+	position:relative;
+}
+.baner img{
+	height:70px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<title>Dom Weselny</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styl_wesele.css">
+	<body>
+		<div class="baner">
+			<h1>
+			<img src="logo_wesele.png">
+			Dom Weselny zorganizuje wszystko za ciebie
+			<img src="logo_wesele.png">
+			</h1>
+		</div>
+	
+		<div class="lp">
+			<h2>Dom Weselny</h2>
+			<p>ul. Przemysłowa 5</p>
+			<p></p>
+			<p>Kalisz</p>
+			<a href="logo_wesele.png">pobierz logo</a>
+		</div>
+	
+		<div class="mp">
+			<h2>Oferujemy</h2>
+			<ol>
+				<li>Wesela</li>
+				<li>Bankiety</li>
+				<li>Konferencje</li>
+			</ol>
+		</div>
+	
+		<div class="rp">
+			<a class="rpred" href="https://img.wprost.pl/img/robert-maklowicz-z-kebabem/4e/7e/c4602d03160aeb6329a6f0040c5b.jpeg">czytaj regulamin</a>
+		</div>
+		
+		<div class="bp">
+			<h2>Ile będzie kosztowało moje wesele?</h2>
+				<form>
+					<label for="goscie">Podaj liczbę gości: </label>
+					<input type="text" id="goscie" name="goscie">
+					<input type="checkbox" id="poprawiny" name="poprawiny"><label for="poprawiny">Wesele z poprawinami?</label>
+					<br>
+					<input type="button" id="koszt" value="Oblicz koszt" onclick="mani()">
+				</form>
+		</div>
+		
+	</body>	
+	
+		<footer>
+		<p>Stronę internetową opracował Adrian Kisielewski</p>
+		</footer>
+		
+	
+	
+	<script>
+	
+	
+	function mani()
+	{
+		var goscie = document.getElementById("goscie").value;
+		var poprawiny = document.getElementById("poprawiny").checked;
+		var cena = 600 + (goscie * 20);
+		if (poprawiny == true)
+		{
+		cena = cena + (goscie * 5);
+		}
+		alert("Koszt wesela będzie wynosił" + " " + cena + " " +  "złotych")
+	}
+	
+	</script>
+	
+</html>
